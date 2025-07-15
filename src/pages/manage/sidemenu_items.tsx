@@ -147,6 +147,13 @@ export const side_menu_items: SideMenuItem[] = [
         component: lazy(() => import("./tasks/Copy")),
       },
       {
+        title: "manage.sidemenu.move",
+        icon: IoCopy,
+        to: "/@manage/tasks/move",
+        role: UserRole.GENERAL,
+        component: lazy(() => import("./tasks/Move")),
+      },
+      {
         title: "manage.sidemenu.decompress",
         icon: TbArchive,
         to: "/@manage/tasks/decompress",
