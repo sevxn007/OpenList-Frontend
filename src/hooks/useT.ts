@@ -3,8 +3,20 @@ import { firstUpperCase } from "~/utils"
 
 export const useT = () => {
   const t = i18n.translator(dict)
-  const tt = (key: string, params?: i18n.BaseTemplateArgs) => {
-    return i18n.resolveTemplate ? i18n.resolveTemplate(key, params) : t(key)
+  const tt = (
+    key: string,
+    params?: i18n.BaseTemplateArgs,
+  ): string | undefined => {
+    const raw = t(key) as string | undefined
+    if (!raw) return undefined
+    if (!params) return raw
+
+    return raw.replace(/{{(.*?)}}/g, (_, p) => {
+      const value = params[p.trim()]
+      return typeof value === "string" || typeof value === "number"
+        ? String(value)
+        : ""
+    })
   }
   return (
     key: string,
