@@ -70,6 +70,12 @@
     "AccessToken": "AccessToken",
     "ClientID": "ClientID",
     "ClientSecret": "ClientSecret",
+    "DirectLink": "DirectLink",
+    "DirectLink-tips": "use direct link when download file",
+    "DirectLinkPrivateKey": "DirectLinkPrivateKey",
+    "DirectLinkPrivateKey-tips": "private key for direct link, if URL authentication is enabled",
+    "DirectLinkValidDuration": "DirectLinkValidDuration",
+    "DirectLinkValidDuration-tips": "minutes, if URL authentication is enabled",
     "RefreshToken": "RefreshToken",
     "UploadThread": "UploadThread",
     "UploadThread-tips": "the threads of upload",
@@ -441,6 +447,7 @@
     "share_ids": "Share ids"
   },
   "Dropbox": {
+    "RootNamespaceId": "RootNamespaceId",
     "api_url_address": "Api url address",
     "client_id": "Client id",
     "client_id-tips": "Keep it empty if you don't have one",
@@ -727,6 +734,13 @@
     "token": "Token",
     "url": "Url",
     "username": "Username"
+  },
+  "OpenListShare": {
+    "forward_archive_requests": "Forward archive requests",
+    "pwd": "Pwd",
+    "root_folder_path": "Root folder path",
+    "sid": "Sid",
+    "url": "Url"
   },
   "PikPak": {
     "captcha_token": "Captcha token",
@@ -1240,6 +1254,7 @@
     "Onedrive Sharelink": {},
     "OnedriveAPP": {},
     "OpenList": {},
+    "OpenListShare": {},
     "PikPak": {},
     "PikPakShare": {},
     "Quark": {},
@@ -1318,6 +1333,7 @@
     "Onedrive Sharelink": "Onedrive Sharelink",
     "OnedriveAPP": "OnedriveAPP",
     "OpenList": "OpenList",
+    "OpenListShare": "OpenListShare",
     "PikPak": "PikPak",
     "PikPakShare": "PikPakShare",
     "Quark": "Quark",
