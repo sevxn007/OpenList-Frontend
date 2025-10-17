@@ -16,6 +16,7 @@ import { currentLang } from "~/app/i18n"
 import { AutoHeightPlugin, VideoBox } from "./video_box"
 import { ArtPlayerIconsSubtitle } from "~/components/icons"
 import { useNavigate } from "@solidjs/router"
+import "./artplayer.css"
 
 const Preview = () => {
   const { pathname, searchParams } = useRouter()
@@ -53,7 +54,7 @@ const Preview = () => {
     container: "#video-player",
     url: objStore.raw_url,
     title: objStore.obj.name,
-    volume: 0.5,
+    volume: 1.0,
     autoplay: getSettingBool("video_autoplay"),
     autoSize: false,
     autoMini: true,

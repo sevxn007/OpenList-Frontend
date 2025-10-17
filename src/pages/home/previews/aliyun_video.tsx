@@ -16,6 +16,7 @@ import { AutoHeightPlugin, VideoBox } from "./video_box"
 import { ArtPlayerIconsSubtitle } from "~/components/icons"
 import { useNavigate } from "@solidjs/router"
 import { TiWarning } from "solid-icons/ti"
+import "./artplayer.css"
 
 export interface Data {
   drive_id: string
@@ -78,7 +79,7 @@ const Preview = () => {
     id: pathname(),
     container: "#video-player",
     title: objStore.obj.name,
-    volume: 0.5,
+    volume: 1.0,
     autoplay: getSettingBool("video_autoplay"),
     autoSize: false,
     autoMini: true,
